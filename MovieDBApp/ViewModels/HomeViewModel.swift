@@ -36,7 +36,7 @@ class HomeViewModel {
     
     // MARK: - Public properties
     
-    // TO-DO: Move to WebService
+    // TO-DO: - Move to WebService
     static var urlConfiguration = String()
     
     init(service: WebServicable) {
@@ -46,7 +46,7 @@ class HomeViewModel {
     // MARK: - Life cycle
     
     func viewDidLoad() {
-        // TO-DO: Move to WebService
+        // TO-DO: - Move to WebService
         
         webService.fetchConfigurationImage { (imageUrl) -> () in
 
@@ -69,7 +69,6 @@ class HomeViewModel {
         guard movies.count > row else {
             return nil
         }
-        
         return movies[row]
     }
     
